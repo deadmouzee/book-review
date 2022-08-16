@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BookReview</string>
+    <string name="save_button">ZAPISZ</string>
+    <string name="edit_button">EDYTUJ</string>
+    <string name="book_name">Wpisz nazwę książki:</string>
+    <string name="book_opinion">Uzupełnij opinię/recenzję książki:</string>
+    <string name="add_to_favourite">Dodaj do Ulubionych!</string>
+    <string name="delete">USUŃ</string>
+    <string name="title">Tytuł</string>
+    <string name="review">Opinia/Recenzja</string>
+    <string name="add_review_button">Dodaj Recenzje</string>
+    <string name="viewTitle">PokażTytuł</string>
+    <string name="starsOpinion">gwiazdki</string>
+</resources>
