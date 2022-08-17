@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.RatingBar;
 
 import androidx.annotation.Nullable;
 
@@ -28,12 +29,12 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean wstawDane(String tytul, String recenzja, String gwiazdki) {
+    public boolean wstawDane(String tytul, String recenzja, RatingBar gwiazdki) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("Tytuł", tytul);
         cv.put("Recenzja", recenzja);
-        cv.put("Ilość Gwiazdek", gwiazdki);
+        cv.put("Ilość Gwiazdek", String.valueOf(gwiazdki));
         if (db.insert(database_table, null, cv) == -1) {
             return false;
         } else
