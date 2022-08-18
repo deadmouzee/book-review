@@ -2,9 +2,10 @@ package com.project.bookreview.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.sqlite.SQLiteCursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.RatingBar;
+
 
 import androidx.annotation.Nullable;
 
@@ -20,7 +21,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + database_table + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, TYTUL TEXT,OPINIA TEXT, GWIAZDKI INTEGER)");
+        db.execSQL("create table " + database_table + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, TYTUL TEXT,RECENZJA TEXT)");
     }
 
     @Override
@@ -29,16 +30,20 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean wstawDane(String tytul, String recenzja, RatingBar gwiazdki) {
+    public boolean wstawDane(String tytul, String recenzja) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("Tytuł", tytul);
-        cv.put("Recenzja", recenzja);
-        cv.put("Ilość Gwiazdek", String.valueOf(gwiazdki));
+        cv.put("TYTUL", tytul);
+        cv.put("RECENZJA", recenzja);
         if (db.insert(database_table, null, cv) == -1) {
             return false;
         } else
             return true;
     }
 
+    public SQLiteCursor pobierzDane() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteCursor kursor = (SQLiteCursor) db.rawQuery("SELECT * FROM " + database_table, null);
+        return kursor;
+    }
 }
