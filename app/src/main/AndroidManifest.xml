@@ -14,13 +14,13 @@
         android:theme="@style/Theme.BookReview"
         tools:targetApi="31">
         <activity
-            android:name=".Add_Book_Review"
+            android:name=".activities_aktywnosci_ekrany.Add_Book_Review"
             android:exported="false" />
         <activity
-            android:name=".Show_Note"
+            android:name=".activities_aktywnosci_ekrany.Show_Note"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities_aktywnosci_ekrany.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

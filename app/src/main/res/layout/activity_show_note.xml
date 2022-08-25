@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_note"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Show_Note">
-
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12sp"
+    android:layout_marginTop="12sp"
+    android:layout_marginEnd="12sp"
+    android:orientation="vertical"
+    android:background="@color/cyan"
+    tools:context=".activities_aktywnosci_ekrany.Show_Note">
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/viewTitle"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:id="@+id/reviewView"
+        android:id="@+id/text_Title"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="8sp"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/review"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/text_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginBottom="4sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/text_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="8sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="11sp"
 
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+</LinearLayout>

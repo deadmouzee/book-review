@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Book_Review">
+    tools:context=".activities_aktywnosci_ekrany.Add_Book_Review">
 
     <EditText
         android:id="@+id/add_book_name"
@@ -52,5 +52,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time_date_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="@id/add_book_name"
+        app:layout_constraintStart_toStartOf="@+id/add_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/add_book_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

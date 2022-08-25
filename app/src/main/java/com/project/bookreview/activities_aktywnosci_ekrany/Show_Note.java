@@ -1,8 +1,10 @@
-package com.project.bookreview;
+package com.project.bookreview.activities_aktywnosci_ekrany;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.project.bookreview.R;
 
 public class Show_Note extends AppCompatActivity {
 

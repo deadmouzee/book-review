@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/MKie/Desktop/Android/book-review/app/src/main/res/layout/activity_add_book_review.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/MKie/Desktop/Android/book-review/app/src/main/res/drawable/ic_baseline_note_add_24.xml" value="0.183" />
+        <entry key="..\:/Users/MKie/Desktop/Android/book-review/app/src/main/res/layout/activity_add_book_review.xml" value="0.33" />
         <entry key="..\:/Users/MKie/Desktop/Android/book-review/app/src/main/res/layout/activity_main.xml" value="0.1743659420289855" />
+        <entry key="..\:/Users/MKie/Desktop/Android/book-review/app/src/main/res/layout/activity_show_note.xml" value="0.1743659420289855" />
         <entry key="..\:/Users/k1erman/AndroidStudioProjects/BookReview2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.135" />
         <entry key="..\:/Users/k1erman/AndroidStudioProjects/BookReview2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
         <entry key="..\:/Users/k1erman/AndroidStudioProjects/BookReview2/app/src/main/res/layout/activity_add_book_review.xml" value="0.33" />

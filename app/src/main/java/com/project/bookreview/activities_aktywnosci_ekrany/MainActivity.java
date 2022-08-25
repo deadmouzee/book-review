@@ -1,4 +1,4 @@
-package com.project.bookreview;
+package com.project.bookreview.activities_aktywnosci_ekrany;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.project.bookreview.R;
 
 
 public class MainActivity extends AppCompatActivity {
