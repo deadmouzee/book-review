@@ -55,13 +55,12 @@
 
     <TextView
         android:id="@+id/time_date_add"
-        android:layout_width="0dp"
+        android:layout_width="0sp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="0sp"
         android:includeFontPadding="false"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="@id/add_book_name"
         app:layout_constraintStart_toStartOf="@+id/add_book_name"
         app:layout_constraintTop_toBottomOf="@+id/add_book_name" />

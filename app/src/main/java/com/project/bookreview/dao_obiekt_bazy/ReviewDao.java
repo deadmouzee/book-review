@@ -10,10 +10,11 @@ import com.project.bookreview.entities_jednostki.Review;
 
 import java.util.List;
 
+@SuppressWarnings("ALL")
 @Dao
 public interface ReviewDao {
 
-    @Query("SELECT * FROM reviews ORDER BY id DESC")//zapytanie do bazy danych
+    @Query("SELECT * FROM reviews ORDER BY id DESC") //zapytanie do bazy danych
     List<Review> getAllReviews();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

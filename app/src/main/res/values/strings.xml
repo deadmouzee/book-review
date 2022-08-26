@@ -11,4 +11,5 @@
     <string name="add_review_button">Dodaj Recenzje</string>
     <string name="viewTitle">PokażTytuł</string>
     <string name="starsOpinion">gwiazdki</string>
+    <string name="addPhoto_btn">dodaj_zdj</string>
 </resources>

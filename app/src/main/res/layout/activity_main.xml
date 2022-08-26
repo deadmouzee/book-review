@@ -21,11 +21,4 @@
         app:srcCompat="@drawable/ic_baseline_note_add_24"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="0dp"
-        android:layout_height="657dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

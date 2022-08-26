@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.project.bookreview.Database.DBHelper;
 import com.project.bookreview.Database.ReviewsDatabase;
 import com.project.bookreview.R;
 import com.project.bookreview.entities_jednostki.Review;
@@ -28,6 +27,7 @@ public class Add_Book_Review extends AppCompatActivity {
     TextView tvTime_date;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,9 +39,10 @@ public class Add_Book_Review extends AppCompatActivity {
         tvTime_date = (TextView) findViewById(R.id.time_date_add);
 
         tvTime_date.setText(
-                new SimpleDateFormat("EEEE, dd MMMM yyyy HH:mm", Locale.getDefault())
+                new SimpleDateFormat(" EEEE, dd MMMM yyyy HH:mm", Locale.getDefault())
                         .format(new Date())
         );
+
 
         saveOpinion.setOnClickListener(new View.OnClickListener() {
             @Override

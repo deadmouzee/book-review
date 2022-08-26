@@ -1,7 +1,5 @@
 package com.project.bookreview.entities_jednostki;
 
-import android.service.autofill.Sanitizer;
-
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -13,25 +11,26 @@ import java.io.Serializable;
 public class Review implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    int id;
 
     @ColumnInfo(name = "title")
-    private String title;
+    String title;
 
     @ColumnInfo(name = "review")
-    private String review;
+    String review;
 
     @ColumnInfo(name = "date_time")
-    private String date_time;
+    String date_time;
 
     @ColumnInfo(name = "image_path")
-    private String image_path;
+    String image_path;
 
     @ColumnInfo(name = "color")
-    private String color;
+    String color;
 
     @ColumnInfo(name = "web_link")
-    private String web_link;
+    String web_link;
+
 
     public int getId() {
         return id;
